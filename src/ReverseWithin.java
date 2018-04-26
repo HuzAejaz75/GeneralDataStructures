@@ -24,7 +24,7 @@ public class ReverseWithin {
             then = start.next;
         }
 
-        // first reversing : dumm`y->1 - 3 - 2 - 4 - 5; pre = 1, start = 2, then = 4
+        // first reversing : dummy->1 - 3 - 2 - 4 - 5; pre = 1, start = 2, then = 4
         // second reversing: dummy->1 - 4 - 3 - 2 - 5; pre = 1, start = 2, then = 5 (finish)
 
         return dummy.next;
