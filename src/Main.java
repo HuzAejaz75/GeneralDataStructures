@@ -3,25 +3,35 @@
  */
 public class Main {
     public static void main(String[] args) {
-        FindLongestSnake FLS = new FindLongestSnake();
-        int[][] matrix = {{1,2,1,2},{7,7,2,5},{6,4,3,4},{1,2,2,5}};
-        FLS.getMaxSequence(matrix);
+      //  FindLongestSnake FLS = new FindLongestSnake();
+      //  int[][] matrix = {{1,2,1,2},{7,7,2,5},{6,4,3,4},{1,2,2,5}};
+       // FLS.getMaxSequence(matrix);
 
-        UniquePermutations UP = new UniquePermutations();
-        int[] nums = {1,1,2};
-        UP.permuteUnique(nums);
+       // UniquePermutations UP = new UniquePermutations();
+      //  int[] nums = {1,1,2};
+      //  UP.permuteUnique(nums);
 
-      /*  ListNode LN0 = new ListNode(1);
-        ListNode LN2 = new ListNode(2);
-        ListNode LN3 = new ListNode(3);
-        ListNode LN4 = new ListNode(4);
-        ListNode LN5 = new ListNode(5);
-        ListNode LN6 = new ListNode(6);
+        ListNode LN0 = new ListNode(1);
+        ListNode LN2 = new ListNode(1);
+        ListNode LN3 = new ListNode(1);
+        ListNode LN4 = new ListNode(2);
+        ListNode LN5 = new ListNode(2);
+       /* ListNode LN6 = new ListNode(0);
+        ListNode LN7 = new ListNode(0);
+        ListNode LN8 = new ListNode(0);*/
         LN0.next = LN2;
         LN2.next = LN3;
         LN3.next = LN4;
         LN4.next = LN5;
-        LN5.next = LN6;*/
+        LN5.next = null;
+        /*LN3.next = LN4;
+        LN4.next = LN5;
+        LN5.next = LN6;
+        LN6.next = LN7;
+        LN7.next = LN8;
+        LN8.next = null;*/
+        removeDuplicates RD = new removeDuplicates();
+        RD.deleteDuplicates(LN0);
       /*  ListNode LN0 = new ListNode(1);
         ListNode LN1 = new ListNode(2);
         ListNode LN2 = new ListNode(3);
@@ -84,8 +94,16 @@ public class Main {
         //reverseBetween RB = new reverseBetween();
         //RB.reverseBetween(LN0,2,5);
 
-        obstacle obs = new obstacle();
-        int[][] numsa = new int[][]{{0,1,0,0,0},{1,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0}};
-        System.out.println(obs.uniquePathsWithObstacles(numsa));
+     //   obstacle obs = new obstacle();
+       // int[][] numsa = new int[][]{{0,1,0,0,0},{1,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0}};
+        //System.out.println(obs.uniquePathsWithObstacles(numsa));
+
+       /* coinDenominations CD = new coinDenominations();
+
+        System.out.println("Coins are " + CD.coinChange(coins, target));*/
+      /* coins cn = new coins();
+        int[] coins = {1,2,5};
+        int target = 100;
+        System.out.println(cn.coinChange(coins,target));*/
     }
 }
